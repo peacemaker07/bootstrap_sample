@@ -26,6 +26,8 @@ a:focus {
   color: #cc7a00;
 }
 
+/*** PC用 ***/
+
 .top-header {
   background-color: rgba(48, 63, 159, 0.8);
 }
@@ -54,9 +56,7 @@ a:focus {
   display: block;
 }
 
-/**
- 
- **/
+/*** SP用 ***/
 
 .hidden {
     display: none;
@@ -65,15 +65,6 @@ a:focus {
 .toggle {
     height: 50px;
     width: 50px;
-    text-align: center;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    border-top: 1px solid #FFFFFF;
-}
-
-.toggle > .icon {
-    font-weight: 800;
-    color: #ffffff
 }
 
 .click-off {
@@ -90,15 +81,12 @@ a:focus {
     float: left;
     width: 250px;
     height: 100vh;
-    background-color: #333;
-    color: #aaaaaa;
     margin-left: -250px;
-    margin-top: 50px;
     -webkit-box-shadow: 2px 0px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    2px 0px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         2px 0px 5px 0px rgba(50, 50, 50, 0.75);
 
-    border-right: 5px solid #222;
+    border-right: 1px solid #222;
 }
 
 .list {
@@ -106,14 +94,9 @@ a:focus {
 }
 
 .list > li {
-    padding: 15px;
-    padding-left: 40px;
+    padding-left: 5px;
+    margin-top: 10px;
     border-bottom: 1px solid #3d3d3d;
-}
-
-.list > li:nth-child(2) {
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 .icon-bar {
@@ -125,4 +108,16 @@ a:focus {
 }
 .icon-bar + .icon-bar {
     margin-top: 4px;
+}
+
+button[type='button'] {
+    width: 40px;
+    height: 40px;
+    padding: 9px 8px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: initial;
+    border: 1px solid #FFFFFF;
+    position: fixed;
 }
