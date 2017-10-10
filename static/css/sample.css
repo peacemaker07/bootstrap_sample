@@ -81,6 +81,7 @@ a:focus {
 
 .list > li {
     padding-top: 10px;
+    padding-left: 10px;
     height: 30px;
     margin-right: 30px;
     border-bottom: 1px solid #3d3d3d;
@@ -99,10 +100,9 @@ a:focus {
 
 button[type='button'] {
     height: 40px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: initial;
     border: 1px solid #FFFFFF;
 }
