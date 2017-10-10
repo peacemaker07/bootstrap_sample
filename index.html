@@ -4,47 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="static/css/cutestrap.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" type="text/css" href="static/css/cutestrap.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/sample.css"/>
     
     <script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="static/js/bootstrap.min.js"></script> -->
     
     <script>
     $(function() {
+		$('.toggle').click(function(){
+			if ($('.drawer').hasClass('active')) {
+				$('.drawer').animate({
+				marginLeft: '-250'},
+				500, function() {
+					$('.drawer').toggleClass('hidden');
+				}
+				);
+			} else {
+				$('.drawer').animate({
+				marginLeft: '0'},
+				500
+				);
+				$('.drawer').toggleClass('hidden');
+			}
+			if ($('.search-drop').hasClass('active')) {
+				$('.search-drop').animate({
+				top: '-500'},
+				500, function() {
+					$('.search-drop').toggleClass('hidden');
+				}
+				);
+				$('.search-drop').toggleClass('active');
+			}
+			$('.drawer').toggleClass('active');
+			$('.click-off').toggleClass('hidden');
+		});
 
-
+		$('.click-off').click(function(){
+			$('.drawer').animate({
+				marginLeft: '-250'},
+				500
+				);
+			$('.drawer').toggleClass('active');
+			$('.click-off').toggleClass('hidden');
+		});
     });
     </script>
 
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
-            <span class="sr-only">メニュー</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
+    <div class="top-header pc">
+        <div class="wrapper nav-holder">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <div id="gnavi" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-            <li><a href="">Link1</a></li>
-            <li><a href="">Link2</a></li>
-            <li><a href="">Link3</a></li>
+    </div>
+
+    <div class="top-header sp">
+        <div class="drawer hidden">
+            <ul class="list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </nav>
-
-    <div class="wrapper">
-        <div class="grid">
-            <div>
-                Column 1
-            </div>
-            <div>
-                Column 2
+        <div class="click-off hidden">
+        </div>
+        <div>
+            <div class="toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </div>
         </div>
     </div>
