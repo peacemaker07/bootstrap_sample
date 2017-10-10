@@ -14,40 +14,8 @@
     <script>
     $(function() {
 		$('.toggle').click(function(){
-			if ($('.drawer').hasClass('active')) {
-				$('.drawer').animate({
-				marginLeft: '-250'},
-				500, function() {
-					$('.drawer').toggleClass('hidden');
-				}
-				);
-			} else {
-				$('.drawer').animate({
-				marginLeft: '0'},
-				500
-				);
-				$('.drawer').toggleClass('hidden');
-			}
-			if ($('.search-drop').hasClass('active')) {
-				$('.search-drop').animate({
-				top: '-500'},
-				500, function() {
-					$('.search-drop').toggleClass('hidden');
-				}
-				);
-				$('.search-drop').toggleClass('active');
-			}
+            $('.drawer').animate({height: 'toggle'}, 500);
 			$('.drawer').toggleClass('active');
-			$('.click-off').toggleClass('hidden');
-		});
-
-		$('.click-off').click(function(){
-			$('.drawer').animate({
-				marginLeft: '-250'},
-				500
-				);
-			$('.drawer').toggleClass('active');
-			$('.click-off').toggleClass('hidden');
 		});
     });
     </script>
@@ -83,8 +51,15 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="click-off hidden">
-        </div>
+    </div>
+
+    <div class="wrapper">
+        <section class="grid">
+            <div>25% Column</div>
+            <div>25% Column</div>
+            <div>25% Column</div>
+            <div>25% Column</div>
+        </section>
     </div>
 
 </body>

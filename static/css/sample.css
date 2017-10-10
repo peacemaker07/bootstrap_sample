@@ -13,47 +13,47 @@
 }
 
 a:link {
-  color: #FF9800;
+    color: #FF9800;
 }
 
 a:visited,
 a:active {
-  color: #ffad33;
+    color: #ffad33;
 }
 
 a:hover,
 a:focus {
-  color: #cc7a00;
+    color: #cc7a00;
 }
 
 /*** PC用 ***/
 
 .top-header {
-  background-color: rgba(48, 63, 159, 0.8);
+    background-color: rgba(48, 63, 159, 0.8);
 }
 
 .nav-holder {
-  padding: 0;
-  padding-top: 1.2rem;
+    padding: 0;
+    padding-top: 1.2rem;
 }
 
 .main-nav ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 1.2rem;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 1.2rem;
 }
 .main-nav ul li {
-  margin-right: 1.4rem;
-  text-transform: uppercase;
+    margin-right: 1.4rem;
+    text-transform: uppercase;
 }
 .main-nav ul li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 .main-nav ul li a {
-  text-decoration: none;
-  display: block;
+    text-decoration: none;
+    display: block;
 }
 
 /*** SP用 ***/
@@ -64,27 +64,13 @@ a:focus {
 
 .toggle {
     height: 50px;
-    width: 50px;
-}
-
-.click-off {
-    margin-top: 50px;
-    height: 100vh;
-    width: 250px;
-    float: right;
-    position: absolute;
-    top: 0;
-    margin-left: 250px;
 }
 
 .drawer {
-    float: left;
-    width: 250px;
-    height: 100vh;
-    margin-left: -250px;
-    -webkit-box-shadow: 2px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    2px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         2px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 2px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    2px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         2px 0px 3px 0px rgba(50, 50, 50, 0.75);
 
     border-right: 1px solid #222;
 }
@@ -94,8 +80,8 @@ a:focus {
 }
 
 .list > li {
-    padding-left: 5px;
     margin-top: 10px;
+    margin-right: 20px;
     border-bottom: 1px solid #3d3d3d;
 }
 
